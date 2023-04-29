@@ -8,7 +8,11 @@ import MainHead from "@/components/MainHead";
 const Brochure = () => {
   return (
     <>
-      <MainHead metaTitle='Brochure, best cleaning franchise in the world' />
+      <MainHead
+        metaTitle="Brochure, best cleaning franchise in the world"
+        metaKeywords="Put Keywords here for brochure page"
+        metaDesc="Put description here for brochure page"
+      />
       <Main />
       <FranchiseBrochure />
       <DomesticServices />

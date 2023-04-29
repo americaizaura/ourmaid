@@ -26,7 +26,11 @@ const OperationsManual = () => {
   }
   return (
     <div>
-      <MainHead metaTitle='Cleaning franchise operations manual.' />
+      <MainHead
+        metaTitle="Cleaning franchise operations manual."
+        metaKeywords="Put Keywords here for OperationsManual page"
+        metaDesc="Put description here for OperationsManual page"
+      />
       {
         !authunticate ? <div className='absolute top-0 w-full h-full z-40  bg-[#1d1d2b] '>
           <div class="w-full m-auto mt-[10%] max-w-xs">
