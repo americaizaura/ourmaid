@@ -16,10 +16,14 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-      <MainHead metaTitle='Best Cleaning franchise in the world.' />
+      <MainHead
+        metaTitle="Best Cleaning franchise in the world."
+        metaKeywords="Put Keywords here for home page"
+        metaDesc="Put description here for home page"
+      />
       <Hero />
       <Section1 />
-=      <Section2 />
+      <Section2 />
       <Section3 />
       <Section4 />
       <Section5 />

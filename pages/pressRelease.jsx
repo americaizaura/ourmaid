@@ -6,7 +6,11 @@ import React from "react";
 const pressRelease = () => {
   return (
     <>
-      <MainHead metaTitle='Residential and commercial cleaning franchise, press release.' />
+      <MainHead
+        metaTitle="Residential and commercial cleaning franchise, press release."
+        metaKeywords="Put Keywords here for Pressrelease page"
+        metaDesc="Put description here for Pressrelease page"
+      />
       <Hero />
       <Section1 />
     </>
