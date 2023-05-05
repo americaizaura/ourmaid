@@ -40,7 +40,7 @@ const Hero = () => {
             Disclosure Document (FDD).{" "}
           </p>
           <button className="py-2 md:py-4 px-6 md:px-8 bg-pink-600 text-md md:text-xl rounded-[30px] cursor-pointer mt-2 md:mt-6 hover:bg-pink-800 font-semibold">
-            OurMaids.com
+            <a href="https://www.ourmaids.com" target="_blank" >OurMaids.com</a>
           </button>
         </div>
       </div>
