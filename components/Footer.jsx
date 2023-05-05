@@ -61,7 +61,7 @@ const Footer = () => {
               DE 19901 <br /> Call us. Llamenos. Appelle nous. (302) 389 5221
               <br />
               email us:{" "}
-              <span className="underline">franchising@ourmaids.com</span>
+              <a href="mailto:customercare@ourmaids.com" className="underline">franchising@ourmaids.com</a>
             </p>
           </motion.div>
         </div>
