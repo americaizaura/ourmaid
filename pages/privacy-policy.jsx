@@ -134,7 +134,6 @@ const privacyPolicy = () => {
             use of the materials on our Website or otherwise relating to
             such materials or on any sites linked to this Website.
           </li>
-
         </ul>
         <p className="text-xl md:text-2xl font-medium text-pink-900 mt-6 mb-2">4. Limitations</p>
         <p className="text-pink-900 text-lg md:text-xl">
@@ -148,7 +147,6 @@ const privacyPolicy = () => {
           limitations of liability for consequential or incidental damages,
           these limitations may not apply to you.
         </p>
-
         <p className="text-xl md:text-2xl font-medium text-pink-900 mt-6 mb-2">5. Accuracy of materials</p>
         <p className="text-pink-900 text-lg md:text-xl">
           The materials appearing on our Website could include technical,
@@ -158,7 +156,6 @@ const privacyPolicy = () => {
           Website at any time without notice to you. However, we do not
           make any commitment to update the materials.
         </p>
-
         <p className="text-xl md:text-2xl font-medium text-pink-900 mt-6 mb-2">6. Links</p>
         <p className="text-pink-900 text-lg md:text-xl">
           We have not reviewed all of the sites linked to our Website and
@@ -167,7 +164,6 @@ const privacyPolicy = () => {
           linked website. Use of any such linked website is at your own
           risk.
         </p>
-
         <p className="text-xl md:text-2xl font-medium text-pink-900 mt-6 mb-2">7. Modifications</p>
         <p className="text-pink-900 text-lg md:text-xl">
           We may revise these Terms of Service for our Website at any
@@ -186,7 +182,6 @@ const privacyPolicy = () => {
           the Website, is truthful, accurate, not misleading and offered in
           good faith.
         </p>
-
         <p className="text-xl md:text-2xl font-medium text-pink-900 mt-6 mb-2">9. Governing Law</p>
         <p className="text-pink-900 text-lg md:text-xl">
           The Terms and Conditions are governed by and construed in
@@ -227,7 +222,6 @@ const privacyPolicy = () => {
           oral, regarding the Website.
         </p>
         <h3 class="text-2xl md:text-3xl my-8 font-semibold mb-8 text-pink-800">Privacy Policy</h3>
-
         <p className="text-pink-900 text-lg md:text-xl">
           Last updated: May 1, 2023 <br />
           This Privacy Policy describes Our policies and procedures on
@@ -373,7 +367,6 @@ const privacyPolicy = () => {
           <li className="text-pink-900 text-lg md:text-xl list-disc	">
             213-800-7644
           </li>
-
         </ul>
         <p className="text-pink-900 text-lg md:text-xl">
           California Residents: If you are a California resident who wishes
@@ -434,7 +427,6 @@ const privacyPolicy = () => {
             Your name, physical address, phone number, e-mail
             address.
           </li>
-
         </ul>
         <p className="text-xl md:text-2xl font-medium text-blue-900 mb-2">How do we receive information about you?</p>
         <p className="text-pink-900 text-lg md:text-xl">
@@ -470,7 +462,6 @@ const privacyPolicy = () => {
             our services, providing you with technical information and
             responding to any customer service issue you may have
           </li>
-
         </ul>
         <p className="text-pink-900 text-lg md:text-xl">
           In addition to the different uses listed above, we may transfer or
@@ -523,7 +514,6 @@ const privacyPolicy = () => {
           <li className="text-pink-900 text-lg md:text-xl 	">
             Lodge a complaint with a supervisory authority.
           </li>
-
         </ol>
         <p className="text-pink-900 text-lg md:text-xl">
           However, please note that these rights are not absolute, and may
@@ -629,7 +619,6 @@ const privacyPolicy = () => {
         </p>
         <p className="text-xl md:text-2xl font-medium text-blue-900 mb-2">Advertisements...</p>
         <p className="text-xl md:text-1xl  text-blue-900 mb-2">Marketing</p>
-
         <p className="text-pink-900 text-lg md:text-xl">
           We may use your Personal Information, such as your name,
           email address, telephone number, etc. ourselves or by using our
@@ -689,7 +678,6 @@ const privacyPolicy = () => {
           Last Modi ed on May 1, 2023.
         </p>
       </div>
-
     </>
   );
 };
