@@ -42,6 +42,7 @@ const Footer = () => {
               logo, Our Maids and "A helping Hand for Busy People" are
               registered trademarks of Our Maids, Inc. 8 The Green, Suite 14095,
               Dover, DE 19901.
+              <a href="/privacy-policy" className="underline"> Our Privacy Policy</a>
             </h5>
           </motion.div>
           <motion.div
