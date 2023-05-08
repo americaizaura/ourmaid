@@ -6,11 +6,10 @@ const Hero = () => {
     <div className="relative h-fit">
       <video
         src="/home.mov"
-        className="inset-0 z-0 object-cover w-full h-auto filter brightness-75"
+        className="inset-0 w-full h-auto object-cover filter brightness-75 z-0"
         autoPlay
         controls
         loop
-        muted
       >
         <source src="/home.mov" type="video/mov" />
       </video>
@@ -22,7 +21,7 @@ const Hero = () => {
           <h3 className="text-xl md:text-2xl tracking-[2px] mb-3 lg:mb-5 font-bold text-center">
             THE BEST RESIDENTIAL AND COMMERCIAL CLEANING FRANCHISE IN THE WORLD.
           </h3>
-          <h3 className="mb-2 text-lg font-bold text-center md:text-2xl lg:mb-3">
+          <h3 className="text-lg md:text-2xl font-bold text-center mb-2 lg:mb-3">
             AND THE MOST AFFORDABLE. OWN A FRANCHISE FROM THE LOWS $30K.{" "}
             <span className="text-pink-300">
               (Please be informed, read our Operations Manual and the FDD and
@@ -41,7 +40,7 @@ const Hero = () => {
             Disclosure Document (FDD).{" "}
           </p>
           <button className="py-2 md:py-4 px-6 md:px-8 bg-pink-600 text-md md:text-xl rounded-[30px] cursor-pointer mt-2 md:mt-6 hover:bg-pink-800 font-semibold">
-            OurMaids.com
+            <a href="https://www.ourmaids.com" target="_blank" >OurMaids.com</a>
           </button>
         </div>
       </div>

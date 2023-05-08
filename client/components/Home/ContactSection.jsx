@@ -78,32 +78,32 @@ const ContactSection = () => {
 
   return (
     <section className="text-gray-600 body-font bg-[#F3E5F6]">
-      <div className="container flex flex-col items-center px-5 py-24 mx-auto overflow-x-hidden md:flex-row">
+      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center overflow-x-hidden">
         <motion.div 
         initial={{ x: -100,opacity: 0 }}
         whileInView={{x:0, opacity: 1 }}
         transition={{
           duration: 0.7,
         }}
-        className="flex flex-col items-center mb-16 text-center lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0">
-          <h1 className="mb-4 text-3xl font-medium text-gray-900 capitalize title-font sm:text-4xl">
+        className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 capitalize font-medium text-gray-900">
           RUN YOUR BUSINESS FROM THE PALM OF YOUR HAND. WE WILL SHOW YOU HOW. 
           </h1>
           <p className="mb-8 text-[18px] leading-relaxed">
           If our concept interests you, fill out the form to learn more about our franchise opportunities. We speak English, Spanish and French. But our chatbot can answer you in almost any language. You can write or speak to it.
           </p>
         </motion.div>
-        <div className="mx-auto lg:w-1/2 md:w-2/3">
+        <div className="lg:w-1/2 md:w-2/3 mx-auto">
           <motion.div 
            initial={{ x: 100,opacity: 0 }}
            whileInView={{x:0, opacity: 1 }}
            transition={{
              duration: 0.7,
            }}
-            className="flex flex-wrap -m-2">
-            <div className="w-1/2 p-2 sm:w-1/3">
+          className="flex flex-wrap -m-2">
+            <div className="p-2 w-1/2 sm:w-1/3">
               <div className="relative">
-                <label htmlFor="name" className="text-sm font-semibold leading-7 text-gray-600">
+                <label htmlFor="name" className="leading-7 text-sm text-gray-600 font-semibold">
                   Name
                 </label>
                 <input
@@ -114,13 +114,13 @@ const ContactSection = () => {
                   value={formValues.name}
                   placeholder="Enter Name"
                   onChange={handleChange}
-                  className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 bg-opacity-50 border border-gray-300 rounded outline-none focus:border-pink-500 focus:bg-white focus:ring-2 focus:ring-pink-200"
+                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-pink-500 focus:bg-white focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
-            <div className="w-1/2 p-2 sm:w-1/3">
+            <div className="p-2 w-1/2 sm:w-1/3">
               <div className="relative">
-                <label htmlFor="email"  className="text-sm font-semibold leading-7 text-gray-600">
+                <label htmlFor="email"  className="leading-7 text-sm text-gray-600 font-semibold">
                   Email
                 </label>
                 <input
@@ -132,13 +132,13 @@ const ContactSection = () => {
                   value={formValues.email}
                   placeholder="Enter email"
                   onChange={handleChange}
-                  className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 bg-opacity-50 border border-gray-300 rounded outline-none focus:border-pink-500 focus:bg-white focus:ring-2 focus:ring-pink-200"
+                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-pink-500 focus:bg-white focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
-            <div className="w-1/2 p-2 sm:w-1/3">
+            <div className="p-2 w-1/2 sm:w-1/3">
               <div className="relative">
-                <label htmlFor="phone" className="text-sm font-semibold leading-7 text-gray-600">
+                <label htmlFor="phone" className="leading-7 text-sm text-gray-600 font-semibold">
                   Direct Phone no.
                 </label>
                 <input
@@ -149,13 +149,13 @@ const ContactSection = () => {
                   value={formValues.phone}
                   placeholder="Enter phone"
                   onChange={handleChange}
-                  className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 bg-opacity-50 border border-gray-300 rounded outline-none focus:border-pink-500 focus:bg-white focus:ring-2 focus:ring-pink-200"
+                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-pink-500 focus:bg-white focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
-            <div className="w-1/2 p-2 sm:w-1/3">
+            <div className="p-2 w-1/2 sm:w-1/3">
               <div className="relative">
-                <label htmlFor="address" className="text-sm font-semibold leading-7 text-gray-600">
+                <label htmlFor="address" className="leading-7 text-sm text-gray-600 font-semibold">
                   Address Area of interest
                 </label>
                 <input
@@ -166,13 +166,13 @@ const ContactSection = () => {
                   placeholder="Enter address"
                   onChange={handleChange}
                   name="address"
-                  className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 bg-opacity-50 border border-gray-300 rounded outline-none focus:border-pink-500 focus:bg-white focus:ring-2 focus:ring-pink-200"
+                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-pink-500 focus:bg-white focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
-            <div className="w-1/2 p-2 sm:w-1/3">
+            <div className="p-2 w-1/2 sm:w-1/3">
               <div className="relative">
-                <label htmlFor="postal" className="text-sm font-semibold leading-7 text-gray-600">
+                <label htmlFor="postal" className="leading-7 text-sm text-gray-600 font-semibold">
                   Postal Code
                 </label>
                 <input
@@ -183,13 +183,13 @@ const ContactSection = () => {
                   value={formValues.postal}
                   placeholder="Enter postal"
                   onChange={handleChange}
-                  className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 bg-opacity-50 border border-gray-300 rounded outline-none focus:border-pink-500 focus:bg-white focus:ring-2 focus:ring-pink-200"
+                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-pink-500 focus:bg-white focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
-            <div className="w-1/2 p-2 sm:w-1/3">
+            <div className="p-2 w-1/2 sm:w-1/3">
               <div className="relative">
-                <label htmlFor="state" className="text-sm font-semibold leading-7 text-gray-600">
+                <label htmlFor="state" className="leading-7 text-sm text-gray-600 font-semibold">
                 State or Country of Interest
                 </label>
                 <input
@@ -200,13 +200,13 @@ const ContactSection = () => {
                   value={formValues.state}
                   placeholder="Enter state"
                   onChange={handleChange}
-                  className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 bg-opacity-50 border border-gray-300 rounded outline-none focus:border-pink-500 focus:bg-white focus:ring-2 focus:ring-pink-200"
+                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-pink-500 focus:bg-white focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
-            <div className="w-1/2 p-2 sm:w-1/3">
+            <div className="p-2 w-1/2 sm:w-1/3">
               <div className="relative">
-                <label htmlFor="hear" className="text-sm font-semibold leading-7 text-gray-600">
+                <label htmlFor="hear" className="leading-7 text-sm text-gray-600 font-semibold">
                 How did you hear about us?
                 </label>
                 <input
@@ -216,13 +216,13 @@ const ContactSection = () => {
                   value={formValues.hear}
                   placeholder="Enter hear"
                   onChange={handleChange}
-                  className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 bg-opacity-50 border border-gray-300 rounded outline-none focus:border-pink-500 focus:bg-white focus:ring-2 focus:ring-pink-200"
+                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-pink-500 focus:bg-white focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
-            <div className="w-1/2 p-2 sm:w-1/3">
+            <div className="p-2 w-1/2 sm:w-1/3">
               <div className="relative">
-                <label htmlFor="capital" className="text-sm font-semibold leading-7 text-gray-600">
+                <label htmlFor="capital" className="leading-7 text-sm text-gray-600 font-semibold">
                 Liquid Capital Available
                 </label>
                 <input
@@ -232,13 +232,13 @@ const ContactSection = () => {
                   value={formValues.capital}
                   placeholder="Enter capital"
                   onChange={handleChange}
-                  className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 bg-opacity-50 border border-gray-300 rounded outline-none focus:border-pink-500 focus:bg-white focus:ring-2 focus:ring-pink-200"
+                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-pink-500 focus:bg-white focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
-            <div className="w-full p-2">
+            <div className="p-2 w-full">
               <div className="relative">
-                <label htmlFor="message" className="text-sm font-semibold leading-7 text-gray-600">
+                <label htmlFor="message" className="leading-7 text-sm text-gray-600 font-semibold">
                   Message
                 </label>
                 <textarea
@@ -247,14 +247,14 @@ const ContactSection = () => {
                   value={formValues.message}
                   placeholder="Enter message"
                   onChange={handleChange}
-                  className="w-full h-32 px-3 py-1 text-base leading-6 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 bg-opacity-50 border border-gray-300 rounded outline-none resize-none focus:border-pink-500 focus:bg-white focus:ring-2 focus:ring-pink-200"
+                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-pink-500 focus:bg-white focus:ring-2 focus:ring-pink-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                 ></textarea>
               </div>
             </div>
-            <div className="w-full p-2">
+            <div className="p-2 w-full">
               <button
                 onClick={handleSubmit}
-                className="flex px-8 py-2 text-lg text-white bg-pink-500 border-0 rounded focus:outline-none hover:bg-pink-600"
+                className="flex text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 rounded text-lg"
               >
                 Submit
               </button>
@@ -265,35 +265,35 @@ const ContactSection = () => {
       {showModal ? (
         <>
           <div
-            className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none"
+            className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
           >
-            <div className="relative w-auto max-w-3xl mx-auto my-6">
+            <div className="relative w-auto my-6 mx-auto max-w-3xl">
               {/*content*/}
-              <div className="relative flex flex-col w-full bg-white border-0 rounded-lg shadow-lg outline-none focus:outline-none">
+              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 {/*header*/}
-                <div className="flex items-start justify-between p-5 border-b border-solid rounded-t border-slate-200">
+                <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
                   <h3 className="text-3xl font-semibold">
                     Message Sent
                   </h3>
                   <button
-                    className="float-right p-1 ml-auto text-3xl font-semibold leading-none text-black bg-transparent border-0 outline-none opacity-5 focus:outline-none"
+                    className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                     onClick={() => setShowModal(false)}
                   >
-                    <span className="block w-6 h-6 text-2xl text-black bg-transparent outline-none focus:outline-none">
+                    <span className="bg-transparent text-black h-6 w-6 text-2xl block outline-none focus:outline-none">
                       ×
                     </span>
                   </button>
                 </div>
                 {/*body*/}
-                <div className="relative flex-auto p-6">
-                  <p className="my-4 text-lg leading-relaxed text-slate-500">
+                <div className="relative p-6 flex-auto">
+                  <p className="my-4 text-slate-500 text-lg leading-relaxed">
                   Thank you for contacting, we will reach out to you as soon as possible
                   </p>
                 </div>
                 {/*footer*/}
-                <div className="flex items-center justify-end p-6 border-t border-solid rounded-b border-slate-200">
+                <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
                   <button
-                    className="px-6 py-3 mb-1 mr-1 text-sm font-bold text-white uppercase transition-all duration-150 ease-linear rounded shadow outline-none bg-emerald-500 active:bg-emerald-600 hover:shadow-lg focus:outline-none"
+                    className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
                     onClick={() => setShowModal(false)}
                   >
@@ -303,7 +303,7 @@ const ContactSection = () => {
               </div>
             </div>
           </div>
-          <div className="fixed inset-0 z-40 bg-black opacity-25"></div>
+          <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
         </>
       ) : null}
     </section>

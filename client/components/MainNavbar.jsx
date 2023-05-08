@@ -18,7 +18,7 @@ const links = [
   { name: "brochure", link: "/brochure" },
   // { name: "webinar", link: "/webinar" },
   { name: "franchise costs", link: "/franchiseCosts" },
-  { name: "FDD", link: "/fdd2" },
+  { name: "FDD", link: "/fdd" },
   { name: "Operations Manual", link: "/operationsManual" },
   { name: "Press Release", link: "/pressRelease" },
 ];
@@ -47,10 +47,9 @@ const MainNavbar = ({ logo }) => {
       <div
         className={`flex px-2  max-w-7xl mx-auto items-center justify-between py-[18px] h-20`}
       >
-        <a href="tel:3023895221" className="text-2xl text-pink-800 lg:hidden hover:text-[#F3D8E6]">
+        <a href="https://web.whatsapp.com/send?phone=972-762-2881" className="text-2xl text-pink-800 lg:hidden hover:text-[#F3D8E6]" target="_blank">
           <FaPhoneAlt />
          </a>
-         
         <motion.div
           initial={{ x: -25, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -74,12 +73,12 @@ const MainNavbar = ({ logo }) => {
           transition={{
             duration: 0.7,
           }}
-          className="items-center justify-center hidden gap-4 lg:gap-6 lg:flex"
+          className="hidden items-center justify-center gap-4 lg:gap-6 lg:flex"
         >
           {links.map((link, index) => (
             <li
               key={index}
-              className="relative font-semibold text-black uppercase transition-colors duration-300 ease-in-out navHover"
+              className="relative text-black transition-colors duration-300 ease-in-out navHover uppercase font-semibold"
             >
               <Link href={link.link} className="">
                 {link.name}
@@ -87,7 +86,7 @@ const MainNavbar = ({ logo }) => {
             </li>
           ))}
         </motion.ul>
-        <div className="relative flex items-center justify-center w-10 h-10 p-2 text-gray-200 bg-pink-700 rounded-full lg:hidden">
+        <div className="lg:hidden relative w-10 h-10 flex items-center justify-center bg-pink-700 text-gray-200 p-2 rounded-full">
           <HiMenuAlt4
             onClick={() => {
               setToggle(true);
@@ -101,12 +100,12 @@ const MainNavbar = ({ logo }) => {
               className="fixed bg-[url(/bgWhite.png)] bg-repeat z-10 h-screen w-[100%] sm:w-[70%] flex flex-col bg-pink-50 bg-cover top-0 right-0 shadow-2xl"
             >
               <HiX
-                className="m-4 text-3xl text-black cursor-pointer"
+                className="text-3xl text-black m-4 cursor-pointer"
                 onClick={() => {
                   setToggle(false);
                 }}
               />
-              <ul className="flex flex-col items-center justify-center gap-8">
+              <ul className="flex flex-col justify-center items-center gap-8">
                 {links.map((link, index) => (
                   <motion.li
                     initial={{ y: -25, opacity: 0 }}
@@ -122,7 +121,7 @@ const MainNavbar = ({ logo }) => {
                       onClick={() => {
                         setToggle(false);
                       }}
-                      className="z-10 font-semibold text-gray-800 uppercase hover:text-pink-800"
+                      className="text-gray-800 z-10 uppercase font-semibold hover:text-pink-800"
                     >
                       {link.name}
                     </Link>
@@ -135,7 +134,7 @@ const MainNavbar = ({ logo }) => {
                 transition={{
                   duration: 0.7,
                 }}
-                className="flex items-center justify-center gap-6 md:hidden mt-7 "
+                className="md:hidden flex gap-6 mt-7 items-center justify-center "
               >
                 <li>
                   <Link
@@ -180,12 +179,12 @@ const MainNavbar = ({ logo }) => {
                 transition={{
                   duration: 0.7,
                 }}
-                className="flex flex-wrap items-center justify-center gap-4 md:hidden mt-7"
+                className="md:hidden flex flex-wrap items-center justify-center mt-7 gap-4"
               >
-                <div className="flex flex-col items-center justify-center gap-8">
+                <div className="flex flex-col justify-center items-center  gap-8">
                   <p
                     onClick={() => setActiveCall(!activeCall)}
-                    className="text-lg font-semibold text-center text-gray-700"
+                    className="text-gray-700 text-lg font-semibold text-center"
                     style={{ overflowWrap: "anywhere" }}
                   >
                     {" "}
