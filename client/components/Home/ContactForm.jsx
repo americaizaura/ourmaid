@@ -68,7 +68,7 @@ const ContactForm = () => (
               );
             });
         }}
-        
+
       >
 
         {({ values, handleSubmit, handleChange, handleBlur }) => (
@@ -149,7 +149,7 @@ const ContactForm = () => (
                           className="text-sm font-semibold leading-7 text-gray-600">
                           Address Area of Interest
                         </label>
-                        
+
                         <Field name="address"
                           className="w-full px-3 py-1 text-base leading-8 transition-colors duration-200 ease-in-out bg-gray-100 bg-opacity-50 border border-gray-300 rounded shadow outline-none appearance-none focus:outline-none focus:shadow-outlinetext-gray-700 focus:border-pink-500 focus:bg-white focus:ring-2 focus:ring-pink-200"
                           placeholder="Enter Address Area of Interest"
@@ -264,7 +264,7 @@ const ContactForm = () => (
                   </div>
                 </div>
                 <div className="w-full p-2">
-                 
+
                   <button type="submit"
                     className="px-8 py-2 text-lg text-white transition duration-300 ease-in-out delay-150 bg-pink-500 rounded hover:bg-pink-400 focus:outline-none focus:shadow-outline "
                   >

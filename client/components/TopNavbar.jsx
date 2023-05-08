@@ -9,14 +9,14 @@ import {
   FaEnvelopeSquare,
   FaWhatsapp
 } from "react-icons/fa";
-import { HiOutlinePhone } from "react-icons/hi";
+import { HiOutlineMail } from "react-icons/hi";
 
 const TopNavbar = () => {
   const [activeCall, setActiveCall] = useState(false);
   return (
     <div className=" bg-[#2E2E2E] md:block p-3 hidden">
       {" "}
-      <div className="items-center justify-between gap-4 mx-auto md:flex max-w-7xl ">
+      <div className="md:flex items-center gap-4 justify-between max-w-7xl mx-auto ">
         <motion.ul
           initial={{ y: -25, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -69,14 +69,11 @@ const TopNavbar = () => {
           }}
           className="flex items-center gap-4"
         >
-          <a href="tel:302-389-5221">
-            <HiOutlinePhone className="text-4xl text-white" />
-
-          </a>
+          <HiOutlineMail className="text-4xl text-white" />
           <div className="">
             <p
               onClick={() => setActiveCall(!activeCall)}
-              className="text-lg font-semibold text-gray-200 cursor-pointer"
+              className="text-gray-200 text-lg font-semibold cursor-pointer"
             >
               {" "}
               {activeCall

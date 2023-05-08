@@ -1,19 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ContactSection from "./ContactSection";
 import ContactForm from "./ContactForm";
-
 
 const Section1 = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-5 py-20 mx-auto mt-48 overflow-x-hidden max-w-7xl md:mt-20">
+    <div className="max-w-7xl px-5 mx-auto mt-48 md:mt-20 min-h-screen flex flex-col items-center justify-center py-20 overflow-x-hidden">
       <motion.h1
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{
           duration: 0.7,
         }}
-        className="flex flex-col w-full gap-4 mb-12 text-2xl font-medium text-center text-gray-900 title-font sm:text-3xl"
+        className="title-font sm:text-3xl flex flex-col gap-4 text-2xl mb-12 text-center font-medium text-gray-900 w-full"
       >
         DO YOU LIKE TRAVELING? LIVING IN DIFFERENT PARTS OF THE WORLD FOR LONG
         PERIODS OF TIME: UP ON THE MOUNTAINS OR DOWN THE SEA LEVEL ON THE BEST
@@ -25,15 +23,15 @@ const Section1 = () => {
         </span>
       </motion.h1>
       <ContactForm />
-      <section className="flex items-center justify-center w-full text-gray-600 body-font">
-        <div className="container flex flex-col items-center mx-auto md:flex-row">
+      <section className="text-gray-600 body-font w-full flex items-center justify-center">
+        <div className="container mx-auto flex  md:flex-row flex-col items-center">
           <motion.div
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{
               duration: 0.7,
             }}
-            className="flex flex-col items-center text-center lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0"
+            className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left md:mb-0 items-center text-center"
           >
             <p className="leading-relaxed text-[18px] mb-4">
               Thank you for your interest in becoming a franchisee! Our Maids
@@ -57,7 +55,7 @@ const Section1 = () => {
             transition={{
               duration: 0.7,
             }}
-            className="w-5/6 lg:max-w-lg lg:w-full md:w-1/2"
+            className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6"
           >
             <img
               className="object-cover object-center rounded"
