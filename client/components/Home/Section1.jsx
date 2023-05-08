@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ContactSection from "./ContactSection";
+import ContactForm from "./ContactForm";
 
 const Section1 = () => {
   return (
@@ -22,7 +22,7 @@ const Section1 = () => {
           IF THE ANSWER IS YES, THEN THIS FRANCHISE IS FOR YOU.
         </span>
       </motion.h1>
-      <ContactSection />
+      <ContactForm />
       <section className="text-gray-600 body-font w-full flex items-center justify-center">
         <div className="container mx-auto flex  md:flex-row flex-col items-center">
           <motion.div
