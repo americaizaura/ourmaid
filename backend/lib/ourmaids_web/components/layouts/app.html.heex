@@ -1,0 +1,44 @@
+<header class="px-4 sm:px-6 lg:px-8">
+  <div class="flex items-center justify-between border-b border-zinc-100 py-3 text-sm">
+    <div class="flex items-center gap-4">
+      <a href="/">
+        <img class="rounded" src={~p"/images/logohd.png"} width="225" />
+      </a>
+    </div>
+    <div class="flex items-center gap-4 font-semibold leading-6 text-zinc-900">
+    <ul class="relative z-10 flex items-center gap-4 px-4 sm:px-6 lg:px-8 justify-end">
+      <%= if @current_user do %>
+        <li class=" leading-6 text-zinc-900">
+          <%= @current_user.username %>
+        </li>
+       
+        <li>
+          <.link
+            href={~p"/users/log_out"}
+            method="delete"
+            class="leading-6 text-zinc-900 font-semibold hover:text-zinc-700"
+          >
+            Log out
+          </.link>
+        </li>
+      <% else %>
+        
+        <li>
+          <.link
+            href={~p"/users/log_in"}
+            class="leading-6 text-zinc-900 font-semibold hover:text-zinc-700"
+          >
+            Log in
+          </.link>
+        </li>
+      <% end %>
+    </ul>
+    </div>
+  </div>
+</header>
+<main class="px-4 py-20 sm:px-6 lg:px-8 bg-gray-100 ">
+  <div class="mx-auto max-w-2xl h-screen ">
+    <.flash_group flash={@flash} />
+    <%= @inner_content %>
+  </div>
+</main>

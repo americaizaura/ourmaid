@@ -1,7 +1,7 @@
-defmodule Ourmaid.PressFixtures do
+defmodule Ourmaids.PressFixtures do
   @moduledoc """
   This module defines test helpers for creating
-  entities via the `Ourmaid.Press` context.
+  entities via the `Ourmaids.Press` context.
   """
 
   @doc """
@@ -15,7 +15,7 @@ defmodule Ourmaid.PressFixtures do
         date: "some date",
         title: "some title"
       })
-      |> Ourmaid.Press.create_release()
+      |> Ourmaids.Press.create_release()
 
     release
   end

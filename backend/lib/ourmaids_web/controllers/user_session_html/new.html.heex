@@ -1,0 +1,22 @@
+<div class="mx-auto max-w-sm">
+  <.header class="text-center">
+    Sign in to account
+    <:subtitle>
+      Welcome! We're so excited to see you again!
+    </:subtitle>
+  </.header>
+
+  <.simple_form :let={f} for={@conn.params["user"]} as={:user} action={~p"/users/log_in"}>
+    <.error :if={@error_message}><%= @error_message %></.error>
+
+    <.input field={f[:username]} type="text" label="username" required />
+    <.input field={f[:password]} type="password" label="Password" required />
+
+   
+    <:actions>
+      <.button phx-disable-with="Signing in..." class="w-full">
+        Sign in <span aria-hidden="true">→</span>
+      </.button>
+    </:actions>
+  </.simple_form>
+</div>

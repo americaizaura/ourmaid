@@ -1,0 +1,8 @@
+<.header>
+  Edit Press Release  <%= @release.title %>
+  <:subtitle>Use this form to manage release records in your database.</:subtitle>
+</.header>
+
+<.release_form changeset={@changeset} action={~p"/#{@release}"} />
+
+<.back navigate={~p"/"}>Back to releases</.back>

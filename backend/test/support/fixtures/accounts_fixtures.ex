@@ -1,7 +1,7 @@
-defmodule Ourmaid.AccountsFixtures do
+defmodule Ourmaids.AccountsFixtures do
   @moduledoc """
   This module defines test helpers for creating
-  entities via the `Ourmaid.Accounts` context.
+  entities via the `Ourmaids.Accounts` context.
   """
 
   def unique_user_email, do: "user#{System.unique_integer()}@example.com"
@@ -18,7 +18,7 @@ defmodule Ourmaid.AccountsFixtures do
     {:ok, user} =
       attrs
       |> valid_user_attributes()
-      |> Ourmaid.Accounts.register_user()
+      |> Ourmaids.Accounts.register_user()
 
     user
   end

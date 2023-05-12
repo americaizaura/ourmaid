@@ -1,0 +1,25 @@
+<.header>
+  Listing Press Releases
+  <:actions>
+    <.link href={~p"/new"}>
+      <.button>New Press release</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.table id="releases" rows={@releases} row_click={&JS.navigate(~p"/#{&1}")}>
+  <:col :let={release} label="Title"><%= release.title %></:col>
+
+  <:col :let={release} label="Date"><%= release.date %></:col>
+  <:action :let={release}>
+    <div class="sr-only">
+      <.link navigate={~p"/#{release}"}>Show</.link>
+    </div>
+    <.link navigate={~p"/#{release}/edit"}>Edit</.link>
+  </:action>
+  <:action :let={release}>
+    <.link href={~p"/#{release}"} method="delete" data-confirm="Are you sure?">
+      Delete
+    </.link>
+  </:action>
+</.table>
